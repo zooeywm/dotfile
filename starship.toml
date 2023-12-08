@@ -1,0 +1,86 @@
+add_newline = false
+command_timeout = 1000
+
+[character]
+success_symbol = '[\$](bold yellow)'
+
+## Configure the number of directories to truncate in the current path
+[directory]
+truncation_length = 0
+truncate_to_repo = true
+style = "blue"
+
+## Configure the duration of the last command
+[cmd_duration]
+min_time = 100
+disabled = true
+style = "dimmed white"
+
+[jobs]
+symbol = ""
+
+[package]
+symbol = "📦"
+
+[env_var.http_proxy]
+symbol = "🪜"
+format = "[$symbol]()"
+
+[env_var.all_proxy]
+symbol = "🚂"
+format = "[$symbol]()"
+
+# git
+
+[git_branch]
+style = "green"
+symbol = " "
+
+[git_status]
+conflicted = " "
+deleted = "✘"
+modified = " "
+stashed = " "
+staged = " "
+renamed = " "
+untracked = " "
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+ignore_submodules = true
+style = "bold #f64d27"
+
+
+# language
+
+[rust]
+symbol = " "
+style = "dimmed 7"
+
+[nodejs]
+symbol = " "
+style = "dimmed green"
+
+[java]
+symbol = " "
+style = "bold red"
+
+[c]
+symbol = " "
+style = "dimmed blue"
+
+[golang]
+symbol = "🐹"
+style = "blue"
+
+[lua]
+symbol = " "
+style = "bold blue"
+
+[python]
+symbol = " "
+style = "bold yellow"
+
+[ocaml]
+symbol = " "
+style = "bold yellow"

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+mkdir -p /mnt/door
+cd /home/door
+rsync -rltgoDAXHWv --progress \
+    Desktop Documents Pictures Music Templates \
+    Collections .git-credentials .ssh \
+    /mnt/door
+rsync -rltgoDAXHWv --progress /usr/local /mnt

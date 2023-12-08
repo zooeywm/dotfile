@@ -1,0 +1,129 @@
+[PL]
+mold = "现代链接器"
+rust-script = "rust脚本解释器"
+rustup = "管理rust工具链"
+tokei = "统计代码"
+gcc = "GNU的C/C++工具链"
+rescript = { manager = "npm", description = "rescript工具链" }
+nrm = { manager = "npm", description = "管理npm镜像源" }
+cargo-binutils = { manager = "cargo", description = "Rust二进制工具" }
+lua-language-server = ""
+stylua = "lua格式化器"
+taplo-cli = "toml语言工具"
+shfmt = "bash/zsh格式化器"
+gopls = "Go语言服务器"
+yaml-language-server.manager = "npm"
+vscode-json-language-server = { manager = "npm", packages = [
+  "vscode-langservers-extracted",
+] }
+volar = { manager = "npm", packages = ["@vue/language-server"] }
+prettier = { manager = "npm", packages = [
+  "prettier",
+  "@prettier/plugin-xml",
+], description = "前端格式化器" }
+fnm = "管理node工具链"
+bash-language-server.manager = "npm"
+mlc = { manager = "cargo", description = "markdown linter" }
+sccache = "编译缓存"
+kondo = "扫除编译产物"
+
+[PL.clang]
+packages = ["clang", "llvm"]
+description = "C/C++工具链"
+
+[PL.typescript-language-server]
+manager = "npm"
+packages = ["typescript", "typescript-language-server"]
+
+[wayland]
+wl-clipboard = "剪贴板"
+
+[wayland.rofi]
+manager = "paru"
+
+[shell]
+nushell = "结构化shell"
+mcfly = "历史命令"
+starship = "装饰提示符"
+zoxide = "瞬移"
+zellij = "终端复用器"
+bash-completion = "bash补全"
+
+[shell.fish]
+packages = ["fish"]
+
+[utility]
+bat = "高级cat"
+choose = "高级cut"
+dos2unix = "改变文本的平台"
+enca = "检查文件编码"
+eza = "高级ls"
+fd = "搜索文件"
+jq = "查询json"
+jless = "json阅读器"
+ripgrep = "正则匹配行"
+rsync = "超级复制"
+sd = "高级sed"
+skim = "模糊搜索.rs"
+fzf = "模糊搜索.go"
+tree = "树视图"
+protobuf = "ProtocolBuffers"
+navi = "命令速查"
+pastel = "调色板"
+hyperfine = "竞争测试"
+pueue = "守护大任务"
+parallel-disk-usage = "磁盘空间统计"
+yazi = { packages = ["yazi-git"], description = "终端文件管理器" }
+
+[utility.conceal]
+packages = ["conceal-bin"]
+manager = "paru"
+description = "垃圾回收站"
+
+[git]
+gitui = "git TUI"
+stgit = { manager = "paru", description = "git的栈式补丁管理器" }
+delta = { packages = ["git-delta"], description = "高级diff" }
+cliff = { packages = ["git-cliff"], description = "变更日志生成器" }
+
+[data]
+p7zip = "7z"
+rar = ""
+zip.packages = ["zip", "unzip"]
+unarchiver = "万能解压"
+
+[monitor]
+erdtree = "体积伴随文件树"
+
+[network]
+gping = "图形化ping"
+dog = "高级dig"
+traceroute = "路由显形"
+lsof = "监测端口"
+
+[show]
+asciinema = "录制命令行视频"
+
+[cargo]
+cargo-generate = "项目模板"
+cargo-machete = "检查无用依赖"
+cargo-msrv = "最旧可用rustc版本"
+cargo-expand = "展开宏"
+cargo-edit = "编辑依赖"
+cargo-supply-chain = "依赖元信息"
+cargo-feature = "管理依赖特性"
+cargo-deny = "分析依赖"
+cargo-audit = { packages = [
+  "cargo-audit",
+  "cargo-auditable",
+], description = "审计" }
+cargo-depgraph = "依赖图"
+cargo-update = "更新cargo安装的应用"
+cargo-cache = { manager = "cargo", description = "管理缓存" }
+crm = { manager = "cargo", description = "管理cargo镜像源" }
+cross = { manager = "cargo", description = "交叉编译" }
+
+[unknown]
+xdg-user-dirs = "规范目录"
+sea-orm-cli = { manager = "cargo", description = "sea-orm工具" }
+genact = "Linux领域大神"
