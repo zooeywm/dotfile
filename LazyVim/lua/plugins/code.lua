@@ -52,7 +52,7 @@ return {
             },
             ["c,cpp"] = "clang-format",
             rust = "rustfmt",
-            ["vue,json,jsonc,javascript,typescript,xml,yaml,html,css"] = "prettier",
+            ["vue,json,jsonc,javascript,typescript,xml,yaml,html,css,markdown"] = "prettier",
         },
         config = function(_, opts)
             local ft = require("guard.filetype")
