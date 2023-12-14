@@ -51,11 +51,6 @@ return {
             if project_lspconfig ~= nil and project_lspconfig.rust_analyzer ~= nil then
                 opts.server = vim.tbl_deep_extend("force", opts.server, project_lspconfig.rust_analyzer)
             end
-            opts.server.capabilities = vim.tbl_deep_extend(
-                "force",
-                vim.lsp.protocol.make_client_capabilities(),
-                require("cmp_nvim_lsp").default_capabilities()
-            )
             vim.g.rustaceanvim = opts
         end,
     },

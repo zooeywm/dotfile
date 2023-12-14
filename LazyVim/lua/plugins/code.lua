@@ -163,7 +163,7 @@ return {
             for _, source in ipairs(opts.sources) do
                 source.group_index = source.group_index or 1
             end
-            table.insert(opts.sources, 1, {
+            table.insert(opts.sources, 2, {
                 name = "copilot",
                 group_index = 1,
                 priority = 0,
