@@ -7,7 +7,7 @@ success_symbol = '[\$](bold yellow)'
 ## Configure the number of directories to truncate in the current path
 [directory]
 truncation_length = 0
-truncate_to_repo = true
+truncate_to_repo = false
 style = "blue"
 
 ## Configure the duration of the last command
@@ -35,6 +35,7 @@ format = "[$symbol]()"
 [git_branch]
 style = "green"
 symbol = " "
+
 
 [git_status]
 conflicted = " "

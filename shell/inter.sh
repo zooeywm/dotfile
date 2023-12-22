@@ -4,7 +4,7 @@
 [[ -n "$INTER_DONE" ]] && return
 
 source "$SHELL_CONFIG_HOME/fn.sh"
-source "$SHELL_CONFIG_HOME/unsync.sh"
+# source "$SHELL_CONFIG_HOME/unsync.sh"
 
 if [ -n "$ZSH_VERSION" ]; then
 	SH='zsh'
@@ -18,6 +18,6 @@ eval "$(starship init $SH)"
 eval "$(fnm env --use-on-cd)"
 eval "$(mcfly init $SH)"
 eval "$(navi widget $SH)"
-eval "$(opam env)"
+# eval "$(opam env)"
 
 INTER_DONE=1
