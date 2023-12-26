@@ -69,22 +69,22 @@ return {
         version = false, -- last release is way too old
         event = "InsertEnter",
         dependencies = {
-            {
-                "zbirenbaum/copilot-cmp",
-                dependencies = "copilot.lua",
-                opts = {},
-                config = function(_, opts)
-                    local copilot_cmp = require("copilot_cmp")
-                    copilot_cmp.setup(opts)
-                    -- attach cmp source whenever copilot attaches
-                    -- fixes lazy-loading issues with the copilot cmp source
-                    require("lazyvim.util").lsp.on_attach(function(client)
-                        if client.name == "copilot" then
-                            copilot_cmp._on_insert_enter({})
-                        end
-                    end)
-                end,
-            },
+            -- {
+            --     "zbirenbaum/copilot-cmp",
+            --     dependencies = "copilot.lua",
+            --     opts = {},
+            --     config = function(_, opts)
+            --         local copilot_cmp = require("copilot_cmp")
+            --         copilot_cmp.setup(opts)
+            --         -- attach cmp source whenever copilot attaches
+            --         -- fixes lazy-loading issues with the copilot cmp source
+            --         require("lazyvim.util").lsp.on_attach(function(client)
+            --             if client.name == "copilot" then
+            --                 copilot_cmp._on_insert_enter({})
+            --             end
+            --         end)
+            --     end,
+            -- },
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
@@ -163,11 +163,11 @@ return {
             for _, source in ipairs(opts.sources) do
                 source.group_index = source.group_index or 1
             end
-            table.insert(opts.sources, 2, {
-                name = "copilot",
-                group_index = 1,
-                priority = 0,
-            })
+            -- table.insert(opts.sources, 2, {
+            --     name = "copilot",
+            --     group_index = 1,
+            --     priority = 0,
+            -- })
             require("cmp").setup(opts)
         end,
     },

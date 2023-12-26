@@ -14,7 +14,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.util.project" },
-        { import = "lazyvim.plugins.extras.coding.copilot" },
+        -- { import = "lazyvim.plugins.extras.coding.copilot" },
         -- import/override with your plugins
         { import = "plugins" },
         { import = "plugins.lang" },
